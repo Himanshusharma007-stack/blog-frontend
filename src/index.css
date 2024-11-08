@@ -1,0 +1,5 @@
+.renderbody {
+  margin: 0 auto;        /* Centers the component horizontally */
+  max-width: 1200px;     /* Sets a maximum width for the component */
+  padding: 0 1.5vw;      /* Adds some padding for additional spacing */
+}
