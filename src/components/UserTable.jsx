@@ -33,11 +33,13 @@ export default function DataTable() {
     title: "",
     desc: "",
   });
-  const email = "himanshu.sharma@gig4ce.com"; // Replace with the desired email
+  const email = JSON.parse(localStorageFunctions.getDatafromLocalstorage('user')).email;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log('JSON.parse ---- ',email);
+        
         const response = await getBlogsByAuthormailId({ email });
         setData(response.data);
       } catch (error) {
